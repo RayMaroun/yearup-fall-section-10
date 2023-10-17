@@ -1,0 +1,11 @@
+2023-10-17 21:14:51 launch
+2023-10-17 21:15:05 search : Ice Cream
+2023-10-17 21:15:09 search : Cars
+2023-10-17 21:15:14 search : Products
+2023-10-17 21:15:15 search : Chips
+2023-10-17 21:15:21 exit
+2023-10-17 21:16:00 launch
+2023-10-17 21:16:06 search : Planes
+2023-10-17 21:16:12 search : Chocolate
+2023-10-17 21:16:14 search : Candy
+2023-10-17 21:16:16 exit
