@@ -145,6 +145,10 @@ public void attack(Character character, double specialAbilityMultiplier) {
 ```java
 public static void battle(Character player, Enemy[] enemies) {
     for (Enemy enemy : enemies) {
+        System.out.println("======================================");
+        System.out.println(player.getName() + " vs " + enemy.getName());
+        System.out.println("======================================");
+
         while (player.getHealth() > 0 && enemy.getHealth() > 0) {
             if (Math.random() > 0.5) { // 50% chance to use regular attack or attack with a multiplier
                 player.attack(enemy);
@@ -153,11 +157,21 @@ public static void battle(Character player, Enemy[] enemies) {
                 player.attack(enemy, 1.5); // Using a multiplier of 1.5 for demonstration
                 System.out.println(player.getName() + " attacked " + enemy.getName() + " with weapon multiplier. " + enemy.getName() + " health is now " + enemy.getHealth());
             }
-            if (enemy.getHealth() > 0) {
-                enemy.attack(player);
-                System.out.println(enemy.getName() + " attacked back. Player health is now " + player.getHealth());
+
+            if (enemy.getHealth() <= 0) {
+                System.out.println(enemy.getName() + " has been defeated!");
+                break; // Exit the loop if the enemy is defeated
+            }
+
+            enemy.attack(player);
+            System.out.println(enemy.getName() + " attacked " + player.getName() + ". " + player.getName() + " health is now " + player.getHealth());
+
+            if (player.getHealth() <= 0) {
+                System.out.println(player.getName() + " has been defeated!");
+                break; // Exit the loop if the player is defeated
             }
         }
+        System.out.println(); // Print a newline for separation between battles
     }
 }
 ```
@@ -175,8 +189,7 @@ public static void battle(Character player, Enemy[] enemies) {
 ```java
 Enemy[] enemies = new Enemy[5];
 for (int i = 0; i < enemies.length; i++) {
-    // Assign each enemy a name and a random damage value between 5 and 15
-    enemies[i] = new Enemy("Enemy " + (i + 1), (int)(Math.random() * 10 + 5));
+    enemies[i] = new Enemy("Enemy " + (i + 1), (int) (Math.random() * 30 + 5));
     System.out.println(enemies[i].getName() + " has " + enemies[i].getHealth() + " health and " + enemies[i].getDamage() + " attack damage.");
 }
 System.out.println("--------------------------------------------");
@@ -199,7 +212,7 @@ public static void main(String[] args) {
 
     Enemy[] enemies = new Enemy[5];
     for (int i = 0; i < enemies.length; i++) {
-        enemies[i] = new Enemy("Enemy " + (i + 1), (int)(Math.random() * 30 + 5));
+        enemies[i] = new Enemy("Enemy " + (i + 1), (int) (Math.random() * 30 + 5));
         System.out.println(enemies[i].getName() + " has " + enemies[i].getHealth() + " health and " + enemies[i].getDamage() + " attack damage.");
     }
     System.out.println("--------------------------------------------");
