@@ -1,0 +1,13 @@
+Order Details:
+
+Sandwiches:
+
+Drinks:
+
+Size: small
+Flavor: pepsi
+Price: $2.0
+
+Chips:
+
+Total Price: $2.0

@@ -1,0 +1,24 @@
+Order Details:
+
+Sandwiches:
+
+Bread: white
+Size: 4"
+Toppings: 
+- steak
+- american
+- Extra Meat
+Sauces: 
+- mayo
+Toasted: Yes
+Price: $7.75
+
+Drinks:
+
+Size: small
+Flavor: pepsi
+Price: $2.0
+
+Chips:
+
+Total Price: $9.75

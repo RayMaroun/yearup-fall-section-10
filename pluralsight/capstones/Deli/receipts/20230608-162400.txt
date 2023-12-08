@@ -1,0 +1,12 @@
+Order Details:
+
+Sandwiches:
+
+Drinks:
+
+Chips:
+
+Type: cheetos
+Price: $1.5
+
+Total Price: $1.5

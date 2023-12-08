@@ -1,0 +1,21 @@
+Order Details:
+
+Sandwiches:
+
+Bread: white
+Size: 4"
+Toppings: 
+- steak
+- ham
+- american
+- Extra Meat
+Sauces: 
+- mayo
+Toasted: Yes
+Price: $8.75
+
+Drinks:
+
+Chips:
+
+Total Price: $8.75
